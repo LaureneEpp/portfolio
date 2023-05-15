@@ -1,0 +1,9 @@
+.cropped-image-clip-polygon {
+    clip-path: polygon(100% 0, 0 0, 50% 100%);
+}
+
+@media screen and (max-width: 570px) {
+    .presentation-title {
+        display: none;
+    }
+}

@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* components.css */
+@import "./components/buttons.css";
+@import "./components/cards.css";
+@import "./components/homepage.css";
+@import "./components/timeline.css";
+@import "./config/resets.css"
+
 /*
 
 @layer components {

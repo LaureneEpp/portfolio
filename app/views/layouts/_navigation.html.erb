@@ -1,0 +1,56 @@
+    <header class="bg-zinc-950 z-50 fixed top-0 w-full">
+      <nav id="main-nav" class="bg-zinc-950 max-w-5xl mx-auto font-sans p-6 flex items-center justify-between">
+        <%= link_to root_path, class:'flex', 'aria-label':'welcome to MyPortfolio' do  %>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 bg-red-200 hidden md:w-7 md:inmine md:mr-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
+            </svg>
+            <span class="text-lg lg:text-xl">Coding<strong><span aria-hidden="true" class="text-purple-800">Portfolio</span></strong></span>
+        <% end %>
+    
+        <button id="menu-btn" aria-label="toggle-button" aria-expanded="false"class="cursor-pointer w-7 md:hidden">            
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-purple-800">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="close hidden w-10 h-10 text-purple-800">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+        <ul id="toggled-menu" class="bg-zinc-950 w-full absolute top-full left-0 -translate-y-full -z-10 border-b border-purple-800 flex flex-col items-center md:static md:z-10 md:w-min md:transform-none md:border-none md:flex-row">
+          <li class="py-4 md-py-0 md:mr-6">
+            <%= link_to 'cv', cv_path, class:"text-sm uppercase font-semibold w-full hover:text-purple-800" %>
+          </li>
+          <li class="py-4 md-py-0 md:mr-6">
+            <%= link_to 'skills', skills_path, class:"text-sm uppercase font-semibold w-full hover:text-purple-800" %>
+          </li>
+          <li class="py-4 md-py-0 md:mr-6">
+            <%= link_to 'projects', projects_path, class:"text-sm uppercase font-semibold w-full hover:text-purple-800" %>
+          </li>
+          <li class="py-4 md-py-0 md:mr-6">
+            <button id='open-btn' class="text-sm uppercase font-semibold w-full hover:text-purple-800">Contact
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="my-modal" class="fixed hidden inset-0 bg-zinc-900 bg-opacity-75 overflow-y-auto h-full w-full z-10" >
+      <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-gray-200">
+        <div class="mt-3 text-center">
+          <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-purple-800">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+            </svg>
+          </div>
+          <h3 class="text-lg leading-6 font-medium text-zinc-950">Contact me!</h3>
+          <div class="mt-2 px-7 py-3">
+            <p class="text-xl text-zinc-950">laurene.eppelle@gmail.com</p>
+          </div>
+          <div class="items-center px-4 py-3">
+            <button id="ok-btn" class="px-4 py-2 bg-purple-800 text-base font-medium rounded-md w-full shadow-sm hover:bg-purple-900 focus:outline-none">
+              OK
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+

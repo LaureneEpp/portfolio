@@ -1,0 +1,43 @@
+.timeline {
+    height: 1080px;
+}
+
+/* 800+80 /3 = 294px */
+/* 1000+80 /3 = 360px */
+
+.d1 {top:80px}
+.d2 {top:440px}
+.d3 {top:800px}
+.d4 {top:1160px}
+
+.c1 {
+    top:80px;
+    left:calc(50% - 270px)
+}
+.c2 {
+    top:440px;
+    left:calc(50% + 270px)
+}
+.c3 {
+    top:800px;
+    left:calc(50% - 270px)
+}
+.c4 {
+    top:1160px;
+    left:calc(50% + 270px)
+}
+
+@media screen and (max-width:1023px) {
+    .timeline {
+        position: relative;
+        left: 200px
+    }
+    .date {
+        left: calc(50% + 200px)
+    }
+
+    .card {
+        left: calc(50% - 50px)
+
+    }
+}
