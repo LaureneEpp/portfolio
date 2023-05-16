@@ -1,7 +1,7 @@
 databases:
   - name: portfolio
   - plan: free 
-    # databaseName: mysite
+  - databaseName: portfolio
     # user: mysite
 
 services:
