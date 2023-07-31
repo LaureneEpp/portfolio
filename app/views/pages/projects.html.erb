@@ -1,39 +1,54 @@
 <div class="p-8 mt-28 h-screen w-full flex items-center">
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full">
     <div class="relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
-      <%= image_tag("news_02.jpg", size: "16x10", alt: "newsapper", class:"object-cover w-full h-48") %>
-
-      <div class="absolute top-0 left-0 px-6 py-4">
-        <h4 class="mb-3 text-xl font-semibold tracking-tight text-purple-800">what about?</h4>
-        <p class="leading-normal text-purple-800">Blog Post</p>
+      <%= link_to "https://manage-my-payroll-lpw1.onrender.com" do %>
+        <%= image_tag("dashboard.jpg", size: "16x10", alt: "newsapper", class:"object-cover w-full h-48") %>
+        <div class="absolute top-0 left-0 px-6 py-4">
+          <h4 class="mb-3 text-xl font-semibold tracking-tight text-purple-800">Manage my payroll</h4>
+          <p class="leading-normal text-purple-800">Payroll Dashboard</p>
+      <% end %>
       </div>
     </div>
-
-    <div class="relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
-      <%= image_tag("fabric12.jpg", size: "16x10", alt: "newsapper", class:"object-cover w-full h-48") %>
-
-      <div class="absolute top-0 left-0 px-6 py-4">
-        <h4 class="mb-3 text-xl font-semibold tracking-tight text-purple-800">Circular lab</h4>
-        <p class="leading-normal text-purple-800">Market place</p>
+    <button class='project-btn'>
+      <div class="relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
+        <%= image_tag("news_02.jpg", size: "16x10", alt: "newsapper", class:"object-cover w-full h-48") %>
+        <div class="absolute top-0 left-0 px-6 py-4">
+          <h4 class="mb-3 text-xl font-semibold tracking-tight text-purple-800">what about?</h4>
+          <p class="leading-normal text-purple-800">Blog Post</p>
+        </div>
       </div>
-    </div>
-
-    <div class="relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
-      <%= image_tag("dashboard.jpg", size: "16x10", alt: "newsapper", class:"object-cover w-full h-48") %>
-
-      <div class="absolute top-0 left-0 px-6 py-4">
-        <h4 class="mb-3 text-xl font-semibold tracking-tight text-purple-800">My M'Ployees</h4>
-        <p class="leading-normal text-purple-800">Payroll Dashboard</p>
+    </button>
+    <button class='project-btn'>
+      <div class="relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
+        <%= image_tag("fabric12.jpg", size: "16x10", alt: "newsapper", class:"object-cover w-full h-48") %>
+        <div class="absolute top-0 left-0 px-6 py-4">
+          <h4 class="mb-3 text-xl font-semibold tracking-tight text-purple-800">Circular lab</h4>
+          <p class="leading-normal text-purple-800">Market place</p>
+        </div>
       </div>
-    </div>
-
-    <div class="relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
-      <%= image_tag("karaoke.jpg", size: "16x10", alt: "newsapper", class:"object-cover w-full h-48") %>
-
-      <div class="absolute top-0 left-0 px-6 py-4">
-        <h4 class="mb-3 text-xl font-semibold tracking-tight text-purple-800">Karaoke Company</h4>
-        <p class="leading-normal text-purple-800">Event management website</p>
+    </button>
+    <button class='project-btn'>
+      <div class="relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
+        <%= image_tag("karaoke.jpg", size: "16x10", alt: "newsapper", class:"object-cover w-full h-48") %>
+        <div class="absolute top-0 left-0 px-6 py-4">
+          <h4 class="mb-3 text-xl font-semibold tracking-tight text-purple-800">Karaoke Company</h4>
+          <p class="leading-normal text-purple-800">Event management website</p>
+        </div>
       </div>
-    </div>
+    </button>
   </div>
 </div>
+    <div class="modal-project fixed hidden inset-0 bg-zinc-900 bg-opacity-75 overflow-y-auto h-full w-full z-10" >
+      <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-gray-200">
+        <div class="mt-3 text-center">
+          <div class="mt-2 px-7 py-3">
+            <p class="text-xl text-zinc-950">Work in progress...</p>
+          </div>
+          <div class="items-center px-4 py-3">
+            <button  class="ok-btn px-4 py-2 bg-purple-800 text-base font-medium rounded-md w-full shadow-sm hover:bg-purple-900 focus:outline-none">
+              OK
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
