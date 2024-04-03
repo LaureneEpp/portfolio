@@ -6,7 +6,7 @@ import AppRoutes from "./components/AppRoutes";
 function App() {
   return (
     <Router>
-        <NavBar />
+      <NavBar />
       <div className="body-content">
         <AppRoutes />
       </div>

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
-    <nav className="navbar navbar-expand-lg bg_primary-color p-4">
+    <nav className="navbar navbar-expand-lg bg_primary-color fixed-top z-2 p-4">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           Navbar
