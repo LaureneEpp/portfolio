@@ -18,8 +18,8 @@ html {
 body,
 #root {
   height: 100%;
-  background-color: #10002b;
-  color: #fff;
+  background-color: #5a189a;
+  color: #fbfaff;
   line-height: 1.5;
   font-weight: 400;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -30,12 +30,11 @@ body,
   color: rgba(255, 255, 255, 0.87);
 }
 
-
 .body-content {
-  margin: 0 auto; 
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   width: 100%;
   height: 100%;
 }
@@ -53,6 +52,10 @@ body,
 }
 .secondary-color {
   color: #5a189a;
+}
+
+.white-color {
+  color: #fbfaff;
 }
 
 a {
