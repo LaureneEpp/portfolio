@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import homepage from "../assets/homepage.jpg";
+import homepage from "../assets/images/homepage.jpg";
 const name = "Welcome, my name is Laurène!".split(" ");
 const presentation =
   "I am a junior Ruby on Rails developper. I'm looking for a new opportunity to keep learning in this position and work on creative and innovative projects from the ground up. I would like to continue bringing my previous experiences in consultancy into a new carrer".split(
