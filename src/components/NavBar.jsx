@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import NavLink from "./NavLink";
 
 function NavBar() {
   return (
@@ -25,27 +26,16 @@ function NavBar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link
-                to="/"
-                className="nav-link active white-color"
-                aria-current="page">
-                Home
-              </Link>
+              <NavLink to={"/"} text={"Home"} />
             </li>
             <li className="nav-item">
-              <Link to="/cv" className="nav-link">
-                Cv
-              </Link>
+              <NavLink to={"/cv"} text={"Cv"} />
             </li>
             <li className="nav-item">
-              <Link to="/skills" className="nav-link">
-                Skills
-              </Link>
+              <NavLink to={"/skills"} text={"Skills"} />
             </li>
             <li className="nav-item">
-              <Link to="/projects" className="nav-link">
-                Projects
-              </Link>
+              <NavLink to={"/projects"} text={"Projects"} />
             </li>
           </ul>
         </div>
