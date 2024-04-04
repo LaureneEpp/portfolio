@@ -4,9 +4,8 @@ function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg bg_primary-color fixed-top z-2 p-4">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#"></a>
         <Link to="/" className="navbar-brand">
-          <span className="fw-semibold link-underline-opacity-100">
+          <span className="fw-semibold link-offset-2 link-underline-opacity-100">
             Coding
             <strong>
               <span className="secondary-color">Portfolio</span>
