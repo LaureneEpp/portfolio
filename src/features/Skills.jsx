@@ -4,7 +4,7 @@ function Skills() {
   return (
     <div className="h-100 overflow-auto p-3">
       <div className=" h-100 w-100 d-flex align-items-center justify-content-center" style={{marginTop: "10rem"}}>
-        <div className="p-3 overflow-y-scroll">
+        <div className="p-3">
           <div className="p-3 my-2 bg_primary-color rounded-lg d-flex align-items-center justify-content-between">
             <div className=" flex-shrink-1 w-50 text-uppercase fw-semibold rounded">
               CSS

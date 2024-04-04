@@ -5,8 +5,8 @@ function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg bg_primary-color fixed-top z-2 p-4">
       <div className="container-fluid">
-        <Link to="/" className="navbar-brand">
-          <span className="fw-semibold link-offset-2 link-underline-opacity-100">
+        <Link to="/" className="navbar-brand fs-4">
+          <span className="fw-bold link-offset-2 link-underline-opacity-100">
             Coding
             <strong>
               <span className="secondary-color">Portfolio</span>
@@ -26,16 +26,16 @@ function NavBar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <NavLink to={"/"} text={"Home"} />
+              <NavLink path={"/"} text={"Home"} />
             </li>
             <li className="nav-item">
-              <NavLink to={"/cv"} text={"Cv"} />
+              <NavLink path={"/cv"} text={"Cv"} />
             </li>
             <li className="nav-item">
-              <NavLink to={"/skills"} text={"Skills"} />
+              <NavLink path={"/skills"} text={"Skills"} />
             </li>
             <li className="nav-item">
-              <NavLink to={"/projects"} text={"Projects"} />
+              <NavLink path={"/projects"} text={"Projects"} />
             </li>
           </ul>
         </div>
