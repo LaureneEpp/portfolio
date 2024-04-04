@@ -1,7 +1,18 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import NavLink from "./NavLink";
+import ModalContact from "./ModalContact";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
 
 function NavBar() {
+  // const [modal, setModal] = useState(false);
+  const [modalShow, setModalShow] = useState(false);
+  // const [show, setShow] = useState(false);
+
+  // const handleClose = () => setShow(false);
+  // const handleShow = () => setShow(true);
+
   return (
     <nav className="navbar navbar-expand-lg bg_primary-color fixed-top z-2 p-4">
       <div className="container-fluid">
@@ -37,9 +48,19 @@ function NavBar() {
             <li className="nav-item">
               <NavLink path={"/projects"} text={"Projects"} />
             </li>
+            <li className="nav-item">
+              <Button
+                variant="outline-light"
+                onClick={() => setModalShow(true)}
+                className="nav-link fw-semibold fs-5">
+                Contact
+              </Button>
+            </li>
           </ul>
         </div>
       </div>
+
+      <ModalContact show={modalShow} onHide={() => setModalShow(false)} />
     </nav>
   );
 }
