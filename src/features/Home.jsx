@@ -19,7 +19,7 @@ function Home() {
   };
 
   return (
-    <div className="h-100 p-2 position-relative overflow-auto">
+    <div className="h-100 position-relative overflow-auto">
       <img
         src={homepage}
         alt="homepage"

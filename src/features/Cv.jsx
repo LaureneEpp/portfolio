@@ -26,7 +26,7 @@ function Cv() {
   ];
 
   return (
-    <div className="h-100 overflow-auto p-3">
+    <div className="h-100 overflow-auto">
       <div className="d-flex align-items-center justify-content-center ">
         <div className="p-3 overflow-y-scroll" style={{ marginTop: "10rem" }}>
           {experiences.map((experience, index) => (
