@@ -1,12 +1,13 @@
-
-.cropped-image-clip-polygon {
-  clip-path: polygon(100% 0, 0 0, 50% 100%);
-}
-/* @media screen and (max-width: 570px) {
-  .presentation-title {
-    display: none;
-  }
+/* .cropped-image-clip-polygon {
+  clip-path: polygon(100% 0, 0 0, 50% 75%);
 } */
+
+@media (max-width: 480px) {
+  .buttons-intro {
+    flex-direction: column;
+    align-self: center;
+  }
+}
 
 .card:nth-child(odd) {
   align-self: flex-end;
@@ -18,6 +19,7 @@
   color: #fbfaff;
 }
 
-.navbar .navbar-brand:hover, .navbar .nav-link:hover  {
+.navbar .navbar-brand:hover,
+.navbar .nav-link:hover {
   color: #5a189a;
 }

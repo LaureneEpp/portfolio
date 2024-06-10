@@ -14,7 +14,7 @@ function NavBar() {
   // const handleShow = () => setShow(true);
 
   return (
-    <nav className="navbar navbar-expand-lg bg_primary-color fixed-top z-2 p-4">
+    <nav className="navbar navbar-expand-lg bg_primary-color z-2 p-4">
       <div className="container-fluid">
         <Link to="/" className="navbar-brand fs-4">
           <span className="fw-bold link-offset-2 link-underline-opacity-100">
