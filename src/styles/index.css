@@ -3,9 +3,22 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  /* margin: 0;
+  padding: 0; */
+}
+
+html, body, #root {
+  height: 100%;
   margin: 0;
   padding: 0;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
 
 html {
   scroll-behavior: smooth;
@@ -26,12 +39,15 @@ body,
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* min-height: 100%; */
 }
 
 .body-content {
   margin: 0 auto;
   height: 100%;
   width: 100%;
+  background-color: #5a189a;
+
 }
 
 /* color scheme */

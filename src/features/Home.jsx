@@ -29,7 +29,7 @@ function Home() {
   return (
     <div className="h-100 w-100">
       <div
-        className="container-fluid h-100 overflow-auto "
+        className="container-fluid overflow-auto "
         style={{
           backgroundImage: `url(${homepage})`,
           backgroundSize: "cover",
@@ -99,7 +99,7 @@ function Home() {
           </Col>
         </Row>
       </div>
-      <div className="container-fluid h-100 overflow-auto p-5">
+      <div className="container-fluid bg_secondary-color overflow-auto p-5">
         <Row className="align-items-lg-center">
           <Row className="d-flex justify-content-center">
             <h3 className="white-color fs-4 fw-medium text-uppercase p-4">

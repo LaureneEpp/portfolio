@@ -1,4 +1,4 @@
-import Card from "../components/Card";
+import CardCv from "../components/CardCv";
 import { motion } from "framer-motion";
 
 function Cv() {
@@ -45,7 +45,7 @@ function Cv() {
                 },
               }}
               viewport={{ once: true }}>
-              <Card
+              <CardCv
                 date={experience.date}
                 title={experience.title}
                 desc={experience.desc}
