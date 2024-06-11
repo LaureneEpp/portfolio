@@ -78,8 +78,8 @@ function Home() {
         <Row className="justify-content-md-center">
           <Col md={6} lg={3} className="mb-4">
             <CardFlip
-              frontText="yogaRoom"
-              backText="YogaClass to manage class bookings, user management"
+              frontText="YogaPlace"
+              backText="YogaPlace to manage class bookings, user management"
               image={yoga}
             />
           </Col>
@@ -99,7 +99,7 @@ function Home() {
           </Col>
         </Row>
       </div>
-      <div className="container-fluid bg_secondary-color overflow-auto p-5">
+      <div className="container-fluid  bg_secondary-color overflow-auto p-5">
         <Row className="align-items-lg-center">
           <Row className="d-flex justify-content-center">
             <h3 className="white-color fs-4 fw-medium text-uppercase p-4">
@@ -118,7 +118,6 @@ function Home() {
           </Col>
           <Col lg="6" xl="7">
             <Row className="justify-content-xl-center">
-              <div className="">
                 <h2 className="mb-3 fs-4 primary-color mb-3">
                   {presentation01}
                 </h2>
@@ -144,7 +143,6 @@ function Home() {
                     </Link>
                   </div>
                 </Row>
-              </div>
             </Row>
           </Col>
         </Row>
