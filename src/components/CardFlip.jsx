@@ -1,9 +1,10 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import yoga from "../assets/images/yoga.jpg";
-import dashboard from "../assets/images/dashboard.jpg";
+// import yoga from "../assets/images/yoga.jpg";
+// import dashboard from "../assets/images/dashboard.jpg";
 
-export default function CardFlip({frontText, backText, image}) {
+export default function CardFlip({ frontText, backText, image, path }) {
   const [isFlipped, setIsFlipped] = useState(false);
   const [isAnimated, setIsAnimated] = useState(false);
 
@@ -15,8 +16,7 @@ export default function CardFlip({frontText, backText, image}) {
   };
 
   return (
-    <div
-      className="d-flex align-items-center justify-content-center h-100">
+    <div className="d-flex align-items-center justify-content-center h-100">
       <div
         className="flip-card rounded"
         onClick={handleFlip}
@@ -31,11 +31,14 @@ export default function CardFlip({frontText, backText, image}) {
             className="flip-card-front w-100 h-100 rounded white-color border border-3"
             style={{ backgroundImage: `url(${image})` }}>
             <div className="w-100 h-100 text-center align-content-center">
-              <h3 className="fs-2 fw-bold">{frontText}</h3>
+              <h3
+                className="fs-2 fw-bold"
+                style={{ textShadow: "1px 1px 2px black" }}>
+                {frontText}
+              </h3>
             </div>
           </div>
-          <div
-            className="flip-card-back w-100 h-100 rounded white-color border border-3 bg_secondary-color">
+          <div className="flip-card-back w-100 h-100 rounded white-color border border-3 bg_secondary-color">
             <div className="w-100 h-100 text-center align-content-center">
               <p className="fs-5 fw-normal p-1">{backText}</p>
             </div>
