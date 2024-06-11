@@ -108,11 +108,6 @@ button:focus-visible {
   border: none;
 }
 
-/* .overlay {
-  height: 100%;
-  width: 100%;
-  opacity: 0.4;
-} */
 .flip-card {
   perspective: 1000px;
 }

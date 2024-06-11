@@ -1,6 +1,10 @@
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import { projectsList } from "../components/Data";
 import ReactPlayer from "react-player";
+import Github from "../assets/icons/Github";
+import Tools from "../assets/icons/Tools";
 
 function ProjectShowpage() {
   const { id } = useParams();
@@ -9,9 +13,18 @@ function ProjectShowpage() {
   return (
     <div className="h-100 overflow-auto">
       <div className="bg_secondary-color me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div className="my-3 p-3">
-          <h2 className="fs-4 fw-bold">{project.title}</h2>
-          <p className="lead">{project.subtitle}</p>
+        <div className="my-3 p-3 d-flex flex-row justify-content-center">
+          <div className="d-flex flex-column">
+            <h2 className="fs-4 fw-bold">{project.title}</h2>
+            <p className="lead">{project.subtitle}</p>
+          </div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="mx-3 px-3">
+            <Tools height="60" width="60" color="white" />
+          </motion.div>
+
         </div>
         <div
           className="container-fluid bg_primary-color shadow-sm mx-auto h-100 p-3 h-100"
@@ -22,24 +35,43 @@ function ProjectShowpage() {
           }}>
           <div className="w-100 d-flex justify-content-between flex-row">
             <div className="my-3 p-3">
-              <h4 className="fs-5 fw-normal d-flex align-items-start ">Category</h4>
-              <ul className="list-unstyled d-flex flex-column align-items-start" style={{ textAlign: "start" }}>
-                {project.category.map((cat, index) => (
-                  <li key={index} className="fs-6 fw-light my-2">{cat}</li>
-                ))}
-              </ul>
+              <div className="d-flex flex-column">
+                <h4 className="fs-5 fw-normal d-flex align-items-start ">
+                  Category
+                </h4>
+                <ul
+                  className="list-unstyled d-flex flex-column align-items-start"
+                  style={{ textAlign: "start" }}>
+                  {project.category.map((cat, index) => (
+                    <li key={index} className="fs-6 fw-light my-2">
+                      {cat}
+                    </li>
+                  ))}
+                </ul>
+                <Link to={project.github} style={{ textAlign: "start" }}>
+                  <Github height="40" width="40" color="white" />
+                </Link>
+              </div>
             </div>
             <div className="my-3 p-3">
-              <h4 className="fs-5 fw-normal d-flex flex-column align-items-end">Stack</h4>
-              <ul className="list-unstyled d-flex flex-column align-items-end" style={{textAlign: "end"}}>
+              <h4 className="fs-5 fw-normal d-flex flex-column align-items-end">
+                Stack
+              </h4>
+              <ul
+                className="list-unstyled d-flex flex-column align-items-end"
+                style={{ textAlign: "end" }}>
                 {project.stack.map((tech, index) => (
-                  <li key={index} className="fs-6 fw-light my-2">{tech}</li>
+                  <li key={index} className="fs-6 fw-light my-2">
+                    {tech}
+                  </li>
                 ))}
               </ul>
             </div>
           </div>
           <div className="w-100 d-flex justify-content-center">
-            <p className="lh-lg m-3 p-3 w-75" style={{textAlign: "justify"}}>{project.text }</p>
+            <p className="lh-lg m-3 p-3 w-75" style={{ textAlign: "justify" }}>
+              {project.text}
+            </p>
           </div>
           {project.features && (
             <div className="w-100 d-flex justify-content-center">
@@ -47,8 +79,12 @@ function ProjectShowpage() {
                 <h4 className="fs-5 fw-normal">Features</h4>
                 <ul className="list-unstyled d-flex flex-column align-items-start">
                   {project.features.map((feature) => (
-                    <li key={feature.id} className="fs-6 fw-light my-2" style={{textAlign: "justify"}}>
-                      <strong className="fw-bold">{feature.name}:</strong> {feature.text}
+                    <li
+                      key={feature.id}
+                      className="fs-6 fw-light my-2"
+                      style={{ textAlign: "justify" }}>
+                      <strong className="fw-bold">{feature.name}:</strong>{" "}
+                      {feature.text}
                     </li>
                   ))}
                 </ul>
